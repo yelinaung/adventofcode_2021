@@ -2,9 +2,8 @@
 Solution for https://adventofcode.com/2021/day/1
 """
 import collections
-
+from itertools import islice, pairwise
 from typing import List
-from itertools import pairwise, islice
 
 
 # from https://docs.python.org/3/library/itertools.html#itertools-recipes
