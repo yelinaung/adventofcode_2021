@@ -33,5 +33,26 @@ def calcuate_position(positions):
     return total_forward * total_depth
 
 
-print(calcuate_position(read_input("day_02/inputs/day_02_input.txt")))
-# print(find_three_measurements_sum(read_input("day_01/inputs/day_one_input.txt")))
+def calculate_aim(positions):
+    total_forward = 0
+    total_depth = 0
+    aim = 0
+    for position in positions:
+        direction = position["direction"]
+        unit = position["unit"]
+        if direction == "down":
+            aim += unit
+        elif direction == "up":
+            aim -= unit
+        else:
+            # forward X does two things:
+            # It increases your horizontal position by X units.
+            total_forward += unit
+            # It increases your depth by your aim multiplied by X.
+            total_depth += aim * unit
+
+    return total_forward * total_depth
+
+
+# print(calcuate_position(read_input("day_02/inputs/day_02_input.txt")))
+print(calculate_aim(read_input("day_02/inputs/day_02_input.txt")))

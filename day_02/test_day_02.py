@@ -10,3 +10,7 @@ def sample_input():
 
 def test_calculate_position(sample_input):
     assert d2.calcuate_position(sample_input) == 150
+
+
+def test_calculate_aim(sample_input):
+    assert d2.calculate_aim(sample_input) == 900
