@@ -55,4 +55,4 @@ def calculate_aim(positions):
 
 
 # print(calcuate_position(read_input("day_02/inputs/day_02_input.txt")))
-print(calculate_aim(read_input("day_02/inputs/day_02_input.txt")))
+# print(calculate_aim(read_input("day_02/inputs/day_02_input.txt")))
