@@ -1,6 +1,7 @@
 """
 Solution for https://adventofcode.com/2021/day/1
 """
+
 import collections
 from itertools import islice, pairwise
 from typing import List
